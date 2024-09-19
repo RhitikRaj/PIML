@@ -5,7 +5,7 @@ import numpy as np
 
 
 # Load the trained model
-model_path = '/workspaces/PIML/Final_model.h5/Final_model.h5'
+model_path = '/workspaces/PIML/Finalmodel'
 model = tf.saved_model.load(model_path) 
 
 
