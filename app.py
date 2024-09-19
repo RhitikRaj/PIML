@@ -2,13 +2,19 @@ import tensorflow as tf
 import streamlit as st
 from PIL import Image
 import numpy as np
+import os
 
 
 # Load the trained model
-model_path = '/workspaces/PIML/Finalmodel'
+# model_path = '/workspaces/PIML/Finalmodel'
+# model = tf.saved_model.load(model_path) 
+
+
+
+# Assuming 'Finalmodel' is in the same directory as app.py
+current_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_dir, 'Finalmodel')
 model = tf.saved_model.load(model_path) 
-
-
 IMAGE_SHAPE = (224, 224)
 
 # Function to preprocess the image (consistent with training preprocessing)
