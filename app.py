@@ -2,7 +2,7 @@ import tensorflow as tf
 import streamlit as st
 from PIL import Image
 import numpy as np
-from keras.layers import TFSMLayer
+# from keras.layers import TFSMLayer
 
 # Load the trained model
 model_path = '/workspaces/PIML/Final_model.h5/Final_model.h5'
