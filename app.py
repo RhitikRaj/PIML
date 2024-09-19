@@ -75,7 +75,7 @@ if uploaded_file is not None:
     confidence = np.max(prediction, axis=-1)
 
     # 11. Display predicted class index, name, and confidence
-    # st.write(f"Predicted class index: {predicted_class[0]}")
+    st.write(f"Predicted class index: {predicted_class[0]}")
     st.write(f"Predicted class name: {class_names[predicted_class[0]]}")
     # st.write(f"Confidence: {confidence[0]*100:.2f}%")
 
